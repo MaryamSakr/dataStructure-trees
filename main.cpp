@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
-
-int main() {
+void display_menu() {
     int choose=0;
     while (choose!=5) {
-        cout<<"Hello in our application \nyou can choose your desired data structure\n1)BST\n2)AVL\n3)Min Heap\n4)Max Heap\n5)Exit Program\n";
+        cout<<"welcome in our program \nchoose your desired data structure:\n1)BST\n2) AVL\n3) Min Heap\n4) Max Heap\n5) Exit Program\n";
         cin>>choose;
         if(choose==5) {
+            cout<<"we are happy to see you :)";
             break;
         }
         switch (choose) {
@@ -19,9 +19,14 @@ int main() {
             case 4:
                 break;
             default:
-                cout<<"please enter a right choice";
+                cout<<"please enter a right choice\n";
 
         }
-
     }
+}
+
+
+int main() {
+    display_menu();
+    return 0;
 }
