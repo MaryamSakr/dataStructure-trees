@@ -221,6 +221,7 @@ void BST::read_file() {
     fin.open("D:\\second year\\second term\\data structure\\code\\assi3\\input.txt", ios::in);
     if (!fin.is_open()) {
         cout << "Error opening file\n";
+        return;
     }
     int n;
     fin >> n;
