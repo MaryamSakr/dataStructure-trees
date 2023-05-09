@@ -1,4 +1,4 @@
-﻿#include "BST.h"
+#include "BST.h"
 int main() {
     BST tree;
     tree.work();
