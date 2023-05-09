@@ -27,11 +27,12 @@ private:
     Node * root;
     int length;
     map<string, int> sheet;
-    void insert_node();
+    void insert_node(string name,string depart,float GPA, int id);
     void search(int id);
     void deleteNode();
     void print();
     void help_print(Node* node);
+    void read_file();
 public:
     BST()
     {

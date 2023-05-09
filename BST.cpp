@@ -4,15 +4,7 @@
 
 #include "BST.h"
 
-void BST::insert_node() {
-    string name,depart;
-    float GPA;
-    int id;
-    cout << "id:"; cin >> id;
-    cin.ignore();
-    cout << "Name:"; getline(cin, name);
-    cout << "GPA:"; cin >>GPA;
-    cout << "Department:"; cin >> depart;
+void BST::insert_node(string name,string depart,float GPA, int id) {
     Node* new_node = new Node(name,depart,GPA,id);
     if (root == NULL) {
         root = new_node;
@@ -181,6 +173,7 @@ void BST::help_print(Node *current) {
 }
 
 void BST::work() {
+    read_file();
     cout << "Choose one of the following options:\n";
     cout << "\t1. Add student \n";
     cout << "\t2. Remove student\n";
@@ -194,8 +187,18 @@ void BST::work() {
         switch (choose)
         {
             case 1:
-                insert_node();
+            {
+                string name,depart;
+                float GPA;
+                int id;
+                cout << "id:"; cin >> id;
+                cin.ignore();
+                cout << "Name:"; getline(cin, name);
+                cout << "GPA:"; cin >>GPA;
+                cout << "Department:"; cin >> depart;
+                insert_node(name , depart, GPA , id);
                 break;
+            }
             case 2:
                 deleteNode();
                 break;
@@ -211,6 +214,31 @@ void BST::work() {
                 break;
         }
         }
+}
+
+void BST::read_file() {
+    fstream fin;
+    fin.open("D:\\second year\\second term\\data structure\\code\\assi3\\input.txt", ios::in);
+    if (!fin.is_open()) {
+        cout << "Error opening file\n";
+    }
+    int n;
+    fin >> n;
+    string dummy;
+    getline(fin, dummy); // skip over the newline character after n
+    for (int i = 0; i < n; i++) {
+        int id;
+        float gpa;
+        string name, depart, temp;
+        getline(fin, temp) ;
+        id = stoi(temp);
+        getline(fin, name);
+        getline(fin, temp) ;
+        gpa = stof(temp);
+        getline(fin, depart) ;
+        insert_node(name, depart, gpa, id);
+    }
+    fin.close();
 }
 
 
