@@ -53,7 +53,45 @@ void printMinHeap(vector<student>& stud){
     }
 }
 
+void MinHeapMenu(){
+    cout<<"1)Add student\n2)Print All (sorted by gpa)\n3)Return to main menu\n";
+    int ch;
+    cin>>ch;
+    if(ch==1){
+        addStudent();
+        cout<<"1)If you want to shoe Min Heap menu again\n2)If you want to close program\n3)Return to main menu\n";
+        int choose;
+        cin>>choose;
+        if(choose==1)
+            MinHeapMenu();
+        if(choose==2)
+            exit(0);
+        if(choose==3){
 
+        }
+        else{
+            cout<<"invalid chose.\nthe program will close.\n";
+            exit(0);
+        }
+    }
+    if(ch==2){
+        printMinHeap(students);
+        cout<<"1)If you want to shoe Max Heap menu again\n2)If you want to close program\n3)Return to main menu\n";
+        int choose;
+        cin>>choose;
+        if(choose==1)
+            MinHeapMenu();
+        if(choose==2)
+            exit(0);
+        else{
+            cout<<"invalid chose.\nthe program will close.\n";
+            exit(0);
+        }
+    }
+    if(ch==3){
+
+    }
+}
 
 
 #endif //DATA_STRUCTURE_ASS3_MIN_HEAP_H
