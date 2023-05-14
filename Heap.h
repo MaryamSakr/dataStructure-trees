@@ -7,15 +7,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct student{
+struct Student{
     string name;
     string depart;
     int id;
     float gpa;
-    student(const string &name, const string &depart, float Gpa, int id) :
+    Student(const string &name, const string &depart, float Gpa, int id) :
             name(name),depart(depart),gpa(Gpa), id(id) {}
 };
-vector<student> students;
+vector<Student> students;
 void read_file() {
     fstream fin;
     fin.open("D:\\Clion projects\\data structure ass3\\input.txt", ios::in);
@@ -37,7 +37,7 @@ void read_file() {
         getline(fin, temp) ;
         gpa = stof(temp);
         getline(fin, depart) ;
-        student s(name, depart, gpa, id);
+        Student s(name, depart, gpa, id);
         students.push_back(s);
     }
     fin.close();
@@ -82,7 +82,7 @@ void addStudent(){
         transform(depart.begin(), depart.end(), depart.begin(), ::toupper);
         found = find(departments.begin(),departments.end(),depart);
     }
-    student s(name,depart,gpa,id);
+    Student s(name,depart,gpa,id);
     students.push_back(s);
     cout<<"The student is added.\n";
     return;

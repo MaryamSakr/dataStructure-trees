@@ -10,7 +10,7 @@
 using namespace std;
 
 
-void min_heapfiy(vector<student>& stud,int i,int n){
+void min_heapfiy(vector<Student>& stud,int i,int n){
     int left=(2*i)+1;
     int right=(2*i)+2;
     int min=i;
@@ -27,7 +27,7 @@ void min_heapfiy(vector<student>& stud,int i,int n){
     }
 }
 
-void buildMin_Heap(vector<student> &stud){
+void buildMin_Heap(vector<Student> &stud){
     read_file();
     int n=stud.size();
     for(int i=(n/2)-1;i>=0;i--){
@@ -35,7 +35,7 @@ void buildMin_Heap(vector<student> &stud){
     }
 }
 
-void min_heapSort(vector<student> &stud){
+void min_heapSort(vector<Student> &stud){
     buildMin_Heap(stud);
     int n=stud.size();
     for(int i=n-1;i>=0;i--){
@@ -44,7 +44,7 @@ void min_heapSort(vector<student> &stud){
     }
 }
 
-void printMinHeap(vector<student>& stud){
+void printMinHeap(vector<Student>& stud){
     min_heapSort(stud);
     int n=stud.size();
     cout<<"Print "<<n<<" students.\n";

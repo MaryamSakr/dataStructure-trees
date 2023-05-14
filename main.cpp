@@ -1,6 +1,7 @@
 #include "BST.h"
 #include "max_heap.h"
 #include "min_heap.h"
+#include "AVL.cpp"
 
 void menu();
 void MinHeapMenu();
@@ -19,6 +20,7 @@ void menu(){
         case 1:
             break;
         case 2:
+            AVL a1();
             break;
         case 3:
             MinHeapMenu();
