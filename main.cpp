@@ -13,11 +13,13 @@ int main() {
 }
 
 void menu(){
+    BST tree;
     cout<<"1. BST\n2. AVL\n3. Min Heap\n4. Max Heap\n5. Exit Program\n";
     int choose;
     cin>>choose;
     switch (choose) {
         case 1:
+            tree.work();
             break;
         case 2:
             AVL a1();
