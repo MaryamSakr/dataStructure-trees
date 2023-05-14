@@ -1,4 +1,5 @@
 #include <iostream>
+#include "AVL.cpp"
 using namespace std;
 void display_menu() {
     int choose=0;
@@ -13,13 +14,14 @@ void display_menu() {
             case 1:
                 break;
             case 2:
+                AVL a1;
                 break;
-            case 3:
-                break;
-            case 4:
-                break;
-            default:
-                cout<<"please enter a right choice\n";
+//            case 3:
+//                break;
+//            case 4:
+//                break;
+//            default:
+//                cout<<"please enter a right choice\n";
 
         }
     }
