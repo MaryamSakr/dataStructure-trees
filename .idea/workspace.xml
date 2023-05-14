@@ -14,13 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e1eaa39c-70db-4296-85f0-48b5e6fd7dc6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/Heap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dataStructure_trees.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dataStructure_trees.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dataStructure_trees.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dataStructure_trees.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/max_heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/max_heap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/min_heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/min_heap.h" afterDir="false" />
     </list>
@@ -61,14 +55,11 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="dataStructure_trees" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dataStructure_trees" TARGET_NAME="dataStructure_trees" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dataStructure_trees" RUN_TARGET_NAME="dataStructure_trees">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -85,6 +76,7 @@
       <updated>1683664368492</updated>
       <workItem from="1683664370502" duration="4000" />
       <workItem from="1683911825285" duration="308000" />
+      <workItem from="1684077375326" duration="907000" />
     </task>
     <servers />
   </component>

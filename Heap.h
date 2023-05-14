@@ -13,9 +13,7 @@ struct student{
     int id;
     float gpa;
     student(const string &name, const string &depart, float Gpa, int id) :
-            name(name),depart(depart),gpa(Gpa), id(id) {
-
-    }
+            name(name),depart(depart),gpa(Gpa), id(id) {}
 };
 vector<student> students;
 void read_file() {
@@ -28,7 +26,7 @@ void read_file() {
     int n;
     fin >> n;
     string dummy;
-    getline(fin, dummy); // skip over the newline character after n
+    getline(fin, dummy);
     for (int i = 0; i < n; i++) {
         int id;
         float gpa;

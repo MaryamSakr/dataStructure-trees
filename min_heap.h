@@ -13,16 +13,16 @@ using namespace std;
 void min_heapfiy(vector<student>& stud,int i,int n){
     int left=(2*i)+1;
     int right=(2*i)+2;
-    int max=i;
+    int min=i;
     if(i<n){
-        if(left<n && stud[left].gpa < stud[max].gpa){
-            max=left;
-        }if(right<n && stud[right].gpa < stud[max].gpa){
-            max=right;
+        if(left < n && stud[left].gpa > stud[min].gpa){
+            min=left;
+        }if(right < n && stud[right].gpa > stud[min].gpa){
+            min=right;
         }
-        if(max != i){
-            swap(stud[i],stud[max]);
-            min_heapfiy(stud,max,n);
+        if(min != i){
+            swap(stud[i],stud[min]);
+            min_heapfiy(stud,min,n);
         }
     }
 }
@@ -48,50 +48,11 @@ void printMinHeap(vector<student>& stud){
     min_heapSort(stud);
     int n=stud.size();
     cout<<"Print "<<n<<" students.\n";
-    for(int i=0;i<n;i--){
+    for(int i=0;i < n;i++){
         cout << "["<<stud[i].id<<","<<stud[i].name<<","<<stud[i].gpa<<","<<stud[i].depart<<"]"<<endl;
     }
 }
 
-void MinHeapMenu(){
-    cout<<"1)Add student\n2)Print All (sorted by gpa)\n3)Return to main menu\n";
-    int ch;
-    cin>>ch;
-    if(ch==1){
-        addStudent();
-        cout<<"1)If you want to shoe Min Heap menu again\n2)If you want to close program\n3)Return to main menu\n";
-        int choose;
-        cin>>choose;
-        if(choose==1)
-            MinHeapMenu();
-        if(choose==2)
-            exit(0);
-        if(choose==3){
-
-        }
-        else{
-            cout<<"invalid chose.\nthe program will close.\n";
-            exit(0);
-        }
-    }
-    if(ch==2){
-        printMinHeap(students);
-        cout<<"1)If you want to shoe Max Heap menu again\n2)If you want to close program\n3)Return to main menu\n";
-        int choose;
-        cin>>choose;
-        if(choose==1)
-            MinHeapMenu();
-        if(choose==2)
-            exit(0);
-        else{
-            cout<<"invalid chose.\nthe program will close.\n";
-            exit(0);
-        }
-    }
-    if(ch==3){
-
-    }
-}
 
 
 #endif //DATA_STRUCTURE_ASS3_MIN_HEAP_H
