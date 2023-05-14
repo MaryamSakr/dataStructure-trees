@@ -27,7 +27,9 @@ void max_heapfiy(vector<Student>& stud,int i,int n){
 }
 
 void buildMax_Heap(vector<Student> &stud){
-    read_file();
+    if(stud.size()==0){
+        read_file();
+    }
     int n=stud.size();
     for(int i=(n/2)-1;i>=0;i--){
         max_heapfiy(stud,i,n);
@@ -46,10 +48,29 @@ void max_heapSort(vector<Student> &stud){
 void printMaxHeap(vector<Student>& stud){
     max_heapSort(stud);
     int n=stud.size();
+    int cs=0,is=0,ds=0,ai=0,it=0;
     cout<<"Print "<<n<<" students.\n";
     for(int i=n-1;i>=0;i--){
         cout << "["<<stud[i].id<<","<<stud[i].name<<","<<stud[i].gpa<<","<<stud[i].depart<<"]"<<endl;
     }
+    for(int i=0;i < n;i++){
+        if(stud[i].depart=="IS")
+            is++;
+        else if(stud[i].depart=="CS")
+            cs++;
+        else if(stud[i].depart=="IT")
+            it++;
+        else if(stud[i].depart=="DS")
+            ds++;
+        else if(stud[i].depart=="AI")
+            ai++;
+    }
+    cout<<"Students per Departments:\n";
+    cout<<"CS "<<cs<<" students\n";
+    cout<<"IT "<<it<<" students\n";
+    cout<<"DS "<<ds<<" students\n";
+    cout<<"IS "<<is<<" students\n";
+    cout<<"AI "<<ai<<" students\n";
 }
 
 

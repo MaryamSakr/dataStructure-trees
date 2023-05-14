@@ -40,10 +40,10 @@ private:
 public:
     AVL() {
         root=NULL;
-        read_file();
     }
 
     void work(){
+        read_file();
         while(choose!=5) {
             cout<<"please choose one of the following options:\n1)Add student\n2) Remove student\n3) Search student\n4) Print All (sorted by id)\n5) Return to main menu\n";
             cin>>choose;
@@ -145,7 +145,7 @@ public:
 
     void read_file() {
         fstream fin;
-        fin.open("D:\\Data S\\ass4\\untitled\\input.txt", ios::in);
+        fin.open("D:\\Clion projects\\data structure ass3\\input.txt", ios::in);
         if (!fin.is_open()) {
             cout << "Error opening file\n";
             return;
