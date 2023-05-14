@@ -6,7 +6,11 @@
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+=======
+  <component name="CMakeRunConfigurationManager">
+>>>>>>> Stashed changes
     <generated>
       <config projectName="dataStructure_trees" targetName="dataStructure_trees" />
     </generated>
@@ -18,10 +22,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1eaa39c-70db-4296-85f0-48b5e6fd7dc6" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/Heap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/max_heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/max_heap.h" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/min_heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/min_heap.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,8 +93,12 @@
       <workItem from="1683664370502" duration="4000" />
       <workItem from="1683911825285" duration="308000" />
       <workItem from="1684077375326" duration="907000" />
+<<<<<<< Updated upstream
       <workItem from="1684085856006" duration="14000" />
       <workItem from="1684086961304" duration="845000" />
+=======
+      <workItem from="1684085856006" duration="414000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

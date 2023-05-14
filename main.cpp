@@ -14,6 +14,7 @@ int main() {
 
 void menu(){
     BST tree;
+    AVL a;
     cout<<"1. BST\n2. AVL\n3. Min Heap\n4. Max Heap\n5. Exit Program\n";
     int choose;
     cin>>choose;
@@ -22,7 +23,7 @@ void menu(){
             tree.work();
             break;
         case 2:
-            AVL a1();
+            a.work();
             break;
         case 3:
             MinHeapMenu();
@@ -128,3 +129,5 @@ void MaxHeapMenu(){
         menu();
     }
 }
+
+

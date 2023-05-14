@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\dataStructure_trees.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\dataStructure_trees.dir/objects.a @CMakeFiles\dataStructure_trees.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\dataStructure_trees.dir/objects.a -Wl,--no-whole-archive -o dataStructure_trees.exe -Wl,--out-implib,libdataStructure_trees.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dataStructure_trees.dir\linklibs.rsp

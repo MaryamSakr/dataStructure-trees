@@ -2,6 +2,7 @@
 6	1599	7056153115914658	CMakeFiles/dataStructure_trees.dir/main.cpp.obj	f1c96d2e86f114
 1	1907	7053675884570244	CMakeFiles/dataStructure_trees.dir/BST.cpp.obj	b18eed1ee6c2d1f5
 1600	1760	7056153117476803	dataStructure_trees.exe	e1667f05646ad16f
+<<<<<<< Updated upstream
 15	1787	7057903552592794	CMakeFiles/dataStructure_trees.dir/BST.cpp.obj	b18eed1ee6c2d1f5
 5	1895	7057903670364808	CMakeFiles/dataStructure_trees.dir/main.cpp.obj	f1c96d2e86f114
 1897	2096	7057903672267219	dataStructure_trees.exe	e1667f05646ad16f
@@ -13,3 +14,6 @@
 1672	1844	7057910302501003	dataStructure_trees.exe	e1667f05646ad16f
 5	1633	7057911593143563	CMakeFiles/dataStructure_trees.dir/main.cpp.obj	f1c96d2e86f114
 1635	1815	7057911594861615	dataStructure_trees.exe	e1667f05646ad16f
+=======
+1	2368	7057891154397824	CMakeFiles/dataStructure_trees.dir/BST.cpp.obj	6cfa749221835070
+>>>>>>> Stashed changes

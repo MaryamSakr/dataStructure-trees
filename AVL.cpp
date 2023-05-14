@@ -41,6 +41,9 @@ public:
     AVL() {
         root=NULL;
         read_file();
+    }
+
+    void work(){
         while(choose!=5) {
             cout<<"please choose one of the following options:\n1)Add student\n2) Remove student\n3) Search student\n4) Print All (sorted by id)\n5) Return to main menu\n";
             cin>>choose;
@@ -97,21 +100,21 @@ public:
                     bool check;
                     cout << "please enter the id of student that you want to delete: ";
                     cin >> id;
-                        for(int i=0 ; i<students.size() ; i++) {
-                            if (students[i].id == id) {
-                                check = true;
-                                break;
-                            }
-                        }
-                        if(check== false) {
-                            cout<<"the student is not exist\n_________________\n";
+                    for(int i=0 ; i<students.size() ; i++) {
+                        if (students[i].id == id) {
+                            check = true;
                             break;
                         }
-                        else {
-                            Delete_Student(root, id);
-                            cout<<"student is removed\n____________________________\n";
-                            break;
-                        }
+                    }
+                    if(check== false) {
+                        cout<<"the student is not exist\n_________________\n";
+                        break;
+                    }
+                    else {
+                        Delete_Student(root, id);
+                        cout<<"student is removed\n____________________________\n";
+                        break;
+                    }
                 case 3:
                     int id2;
                     bool check2;
