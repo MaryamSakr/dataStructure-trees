@@ -37,6 +37,7 @@ void read_file() {
         getline(fin, temp) ;
         gpa = stof(temp);
         getline(fin, depart) ;
+
         Student s(name, depart, gpa, id);
         students.push_back(s);
     }

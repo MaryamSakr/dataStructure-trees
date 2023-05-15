@@ -8,7 +8,6 @@ using namespace std;
 struct student {
 
     student() {}
-
     int id=0;
     string name;
     string department;
@@ -37,7 +36,7 @@ private:
     node* root;
     int choose=0;
     vector<student> students;
-
+    int ds=0 , is=0 , cs=0 , ai=0 , it=0 ;
 public:
     AVL() {
         root=NULL;
@@ -70,6 +69,23 @@ public:
                     for(int i=0 ; i<5 ; i++) {
                         if(s.departments[i]==s.department) {
                             flag = true;
+                            if(s.department=="DS") {
+                                ds++;
+                            }
+                            else if(s.department=="IS") {
+                                is++;
+                            }
+                            else if(s.department=="IT") {
+                                it++;
+                            }
+                            else if(s.department=="CS") {
+                                cout<<".";
+                                cs++;
+                            }
+                            else if(s.department=="AI") {
+                                ai++;
+                            }
+
                             break;
                         }
                     }
@@ -137,6 +153,7 @@ public:
                     }
                 case 4:
                     printAVL(root);
+                    print_dep();
                     break;
 
                 default:
@@ -147,7 +164,7 @@ public:
 
     void read_file() {
         fstream fin;
-        fin.open("D:\\Clion projects\\data structure ass3\\input.txt", ios::in);
+        fin.open("D:\\Data S\\ass4\\dataStructure-trees\\input.txt", ios::in);
         if (!fin.is_open()) {
             cout << "Error opening file\n";
             return;
@@ -166,6 +183,22 @@ public:
             getline(fin, temp) ;
             gpa = stof(temp);
             getline(fin, depart) ;
+            if(depart=="DS") {
+                ds++;
+            }
+            else if(depart=="IS") {
+                is++;
+            }
+            else if(depart=="IT") {
+                it++;
+            }
+            else if(depart=="CS") {
+                cs++;
+            }
+            else if(depart=="AI") {
+                ai++;
+            }
+
             student std(name, depart, gpa, id);
             students.push_back(std);
             add_student(root,std);
@@ -365,8 +398,16 @@ public:
                 printAVL(node1->left);
                 cout<<"- ID:"<<node1->s.id<<"\n  Name: "<<node1->s.name<<"\n  GPA: "<<node1->s.GPA<<"\n  Department: "<<node1->s.department<<endl;
                 cout<<"__________________________________\n";
-                printAVL(node1->right);//4
+                printAVL(node1->right);
             }
+    }
+
+    void print_dep() {
+        cout<<"the number of students in CS department are: "<<cs<<"\n";
+        cout<<"the number of students in DS department are: "<<ds<<"\n";
+        cout<<"the number of students in AI department are: "<<ai<<"\n";
+        cout<<"the number of students in IS department are: "<<is<<"\n";
+        cout<<"the number of students in IT department are: "<<it<<"\n";
     }
 
 };
