@@ -2,6 +2,7 @@
 #include <fstream>
 #include <algorithm>
 #include "iostream"
+
 using namespace std;
 
 struct student {
@@ -48,7 +49,7 @@ public:
             cout<<"please choose one of the following options:\n1)Add student\n2) Remove student\n3) Search student\n4) Print All (sorted by id)\n5) Return to main menu\n";
             cin>>choose;
             if(choose==5) {
-
+                return;
             }
             switch (choose) {
                 case 1:
@@ -137,6 +138,7 @@ public:
                 case 4:
                     printAVL(root);
                     break;
+
                 default:
                     cout<<"please enter a valid choice";
             }
@@ -366,4 +368,7 @@ public:
                 printAVL(node1->right);//4
             }
     }
+
 };
+
+

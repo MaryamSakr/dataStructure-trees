@@ -15,28 +15,33 @@ int main() {
 void menu(){
     BST tree;
     AVL a;
-    cout<<"1. BST\n2. AVL\n3. Min Heap\n4. Max Heap\n5. Exit Program\n";
     int choose;
-    cin>>choose;
-    switch (choose) {
-        case 1:
-            tree.work();
-            break;
-        case 2:
-            a.work();
-            break;
-        case 3:
-            MinHeapMenu();
-            break;
-        case 4:
-            MaxHeapMenu();
-            break;
-        case 5:
-            exit(0);
-        default:
-            cout<<"Invalid choice\nPlease enter your choice again\n";
-            menu();
+    while (choose!=5){
+        cout<<"1. BST\n2. AVL\n3. Min Heap\n4. Max Heap\n5. Exit Program\n";
+        cin>>choose;
+        switch (choose) {
+            case 1:
+                tree.work();
+                break;
+            case 2:
+                a.work();
+                break;
+            case 3:
+                MinHeapMenu();
+                break;
+            case 4:
+                MaxHeapMenu();
+                break;
+            case 5:
+                cout<<"see you soon :)";
+                exit(0);
+            default:
+                cout<<"Invalid choice\nPlease enter your choice again\n";
+                menu();
+        }
     }
+
+
 }
 
 void MinHeapMenu(){
