@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Data S/ass4/dataStructure-trees/BST.cpp" "CMakeFiles/dataStructure_trees.dir/BST.cpp.obj" "gcc" "CMakeFiles/dataStructure_trees.dir/BST.cpp.obj.d"
-  "D:/Data S/ass4/dataStructure-trees/main.cpp" "CMakeFiles/dataStructure_trees.dir/main.cpp.obj" "gcc" "CMakeFiles/dataStructure_trees.dir/main.cpp.obj.d"
+  "C:/Users/Lenovo/OneDrive/Documents/GitHub/dataStructure-trees/BST.cpp" "CMakeFiles/dataStructure_trees.dir/BST.cpp.obj" "gcc" "CMakeFiles/dataStructure_trees.dir/BST.cpp.obj.d"
+  "C:/Users/Lenovo/OneDrive/Documents/GitHub/dataStructure-trees/main.cpp" "CMakeFiles/dataStructure_trees.dir/main.cpp.obj" "gcc" "CMakeFiles/dataStructure_trees.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

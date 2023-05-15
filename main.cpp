@@ -15,7 +15,7 @@ int main() {
 void menu(){
     BST tree;
     AVL a;
-    int choose;
+    int choose=0;
     while (choose!=5){
         cout<<"1. BST\n2. AVL\n3. Min Heap\n4. Max Heap\n5. Exit Program\n";
         cin>>choose;
